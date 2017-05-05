@@ -1,7 +1,10 @@
+extern crate serde;
+extern crate serde_json;
+
+#[derive(Serialize, Deserialize)]
 pub struct User {
 	id : i64,
-	name : String,
-	pets : Vec<String>
+	name : String
 }
 
 impl User {
